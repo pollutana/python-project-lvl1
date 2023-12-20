@@ -15,7 +15,7 @@ def launch(rules: str, game_logic) -> None:
         question, correct_answer = game_logic.generate_question_and_answer()
         print(question)
         user_answer = input("Your answer: ")
-        if game_logic.check_answer(user_answer, correct_answer):
+        if user_answer == correct_answer:
             print("Correct!")
         else:
             print(

@@ -14,10 +14,6 @@ def _generate_progression() -> list:
     return list(range(start, stop, step))
 
 
-def check_answer(a, b):
-    return a == b
-
-
 def generate_question_and_answer() -> tuple:
     prog = _generate_progression()
     hidden_index = random.randint(0, len(prog) - 1)
