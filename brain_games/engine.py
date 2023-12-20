@@ -13,6 +13,7 @@ def launch(rules: str, game_logic) -> None:
     print(rules)
     for round in range(ROUNDS):
         question, correct_answer = game_logic.generate_question_and_answer()
+        question = "Question: " + question
         print(question)
         user_answer = input("Your answer: ")
         if user_answer == correct_answer:

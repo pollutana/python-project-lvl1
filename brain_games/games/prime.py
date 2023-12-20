@@ -15,4 +15,4 @@ def is_prime_number(number: int) -> bool:
 def generate_question_and_answer() -> tuple:
     number = random.randint(2, 100)
     correct_answer = "yes" if is_prime_number(number) else "no"
-    return f"Question: {number}", correct_answer
+    return f"{number}", correct_answer

@@ -22,6 +22,6 @@ def _calculate_answer(a: int, b: int, operator: str) -> int:
 def generate_question_and_answer() -> tuple:
     a, b = random.randrange(0, 50), random.randrange(1, 11)
     operator = random.choice(list(OPERATORS.keys()))
-    question_text = f"Question: {a} {operator} {b}"
+    question_text = f"{a} {operator} {b}"
     correct_answer = str(_calculate_answer(a, b, operator))
     return question_text, correct_answer

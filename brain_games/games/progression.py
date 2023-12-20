@@ -19,5 +19,5 @@ def generate_question_and_answer() -> tuple:
     hidden_index = random.randint(0, len(prog) - 1)
     correct_answer = str(prog[hidden_index])
     prog[hidden_index] = _HIDE_SYMBOL
-    question_text = "Question: " + " ".join(map(str, prog))
+    question_text = " ".join(map(str, prog))
     return question_text, correct_answer
